@@ -45,3 +45,10 @@ Two different categories of types:
 > ### 📚 Note:
 >
 > If declaration and initialization are on the same line, Typescript will figure out {infer} the type of 'color' for us.
+
+**Typed Arrays:**
+Arrays where each element is some consistent type of value.
+
+> ### 📚 Note:
+>
+> Best practice is that Empty arrays' `type` should be annotated.
