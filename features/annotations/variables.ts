@@ -37,6 +37,8 @@ const logNumber: (i: number) => void = (i: number) => {
 
 // ! When to use annotations
 
+// # on variables
+
 //* 1) Function that returns the `any` type
 
 const json = '{"x":20,"y":42}';
