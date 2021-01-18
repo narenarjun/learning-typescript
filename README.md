@@ -57,3 +57,7 @@ Arrays where each element is some consistent type of value.
 Tuple types allow you to express an array with a fixed number of elements whose types are known, but need not be the same.
 
 > Note: In realworld , tuples are not used very often.
+
+### Interfaces
+
+Creates a new type, describing the property names and value types of an object.
