@@ -1,4 +1,6 @@
 class Vehicle {
+  constructor(public color: string) {}
+
   // ! uncomment to see the error thrown in Car class which is inheriting this Vehicle class.
   // drive(): void {
   //   console.log('vroom vroom');
@@ -9,8 +11,15 @@ class Vehicle {
   }
 }
 
+const vehicle = new Vehicle('yellow');
+console.log(vehicle.color);
+
 // ! basic inheritance
 class Car extends Vehicle {
+  constructor(public wheels: number, color: string) {
+    super(color);
+  }
+
   private drive(): void {
     console.log('vzzzhhhhh');
   }
@@ -21,11 +30,11 @@ class Car extends Vehicle {
   }
 }
 
-// const vechile = new Vehicle();
-// vechile.drive();
-// vechile.honk();
+// const vehicle = new Vehicle();
+// vehicle.drive();
+// vehicle.honk();
 
-const car = new Car();
+const car = new Car(4, 'red');
 // car.drive();
 car.startDrivingProcess();
 // car.honk();
