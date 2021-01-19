@@ -69,6 +69,7 @@ Creates a new type, describing the property names and value types of an object.
   - `Public` --> This method can be called any where, any time
   - `Private` --> This method can only be called by other methods in this class
   - `Protected` --> This method can be called by other methods in this class, or by other methods in child classes
-    > ### 📚 Note:
-    >
-    > In TypeScript, each member is `public` by **default**. We may still mark a member `public` _explicitly_.
+
+> ### 📚 Note:
+>
+> In TypeScript, each member is `public` by **default**. We may still mark a member `public` _explicitly_.
