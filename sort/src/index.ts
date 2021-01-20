@@ -1,22 +1,26 @@
-class Sorter {
-  constructor(public collection: number[]) {}
+import { Sorter } from './Sorter';
+// import { NumbersCollection } from './NumbersCollection';
+// import { CharactersCollection } from './CharactersCollection';
+import { LinkedList } from './LinkedList';
 
-  sort(): void {
-    const { length } = this.collection;
+// const numbersCollection = new NumbersCollection([-52, 52, 3, -5, 0]);
+// const sorter1 = new Sorter(numbersCollection);
+// sorter1.sort();
+// console.log(numbersCollection.data);
 
-    for (let i = 0; i < length; i++) {
-      for (let j = 0; j < length - i - 1; j++) {
-        if (this.collection[j] > this.collection[j + 1]) {
-          const lefthand = this.collection[j];
-          this.collection[j] = this.collection[j + 1];
-          this.collection[j + 1] = lefthand;
-        }
-      }
-    }
-  }
-}
+// const charactersCollection = new CharactersCollection('Xanthyabryes');
+// const sorter2 = new Sorter(charactersCollection);
+// sorter2.sort();
+// console.log(charactersCollection.data);
 
-const sorter = new Sorter([10, 3, -5, 0]);
-sorter.sort();
+const linkedList = new LinkedList();
+linkedList.add(6);
+linkedList.add(12);
+linkedList.add(37);
+linkedList.add(93);
+linkedList.add(-13);
 
-console.log(sorter.collection);
+const sorter3 = new Sorter(linkedList);
+sorter3.sort();
+
+linkedList.print();

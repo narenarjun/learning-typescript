@@ -1,22 +1,23 @@
 "use strict";
-var Sorter = /** @class */ (function () {
-    function Sorter(collection) {
-        this.collection = collection;
-    }
-    Sorter.prototype.sort = function () {
-        var length = this.collection.length;
-        for (var i = 0; i < length; i++) {
-            for (var j = 0; j < length - i - 1; j++) {
-                if (this.collection[j] > this.collection[j + 1]) {
-                    var lefthand = this.collection[j];
-                    this.collection[j] = this.collection[j + 1];
-                    this.collection[j + 1] = lefthand;
-                }
-            }
-        }
-    };
-    return Sorter;
-}());
-var sorter = new Sorter([10, 3, -5, 0]);
-sorter.sort();
-console.log(sorter.collection);
+Object.defineProperty(exports, "__esModule", { value: true });
+var Sorter_1 = require("./Sorter");
+// import { NumbersCollection } from './NumbersCollection';
+// import { CharactersCollection } from './CharactersCollection';
+var LinkedList_1 = require("./LinkedList");
+// const numbersCollection = new NumbersCollection([-52, 52, 3, -5, 0]);
+// const sorter1 = new Sorter(numbersCollection);
+// sorter1.sort();
+// console.log(numbersCollection.data);
+// const charactersCollection = new CharactersCollection('Xanthyabryes');
+// const sorter2 = new Sorter(charactersCollection);
+// sorter2.sort();
+// console.log(charactersCollection.data);
+var linkedList = new LinkedList_1.LinkedList();
+linkedList.add(6);
+linkedList.add(12);
+linkedList.add(37);
+linkedList.add(93);
+linkedList.add(-13);
+var sorter3 = new Sorter_1.Sorter(linkedList);
+sorter3.sort();
+linkedList.print();
