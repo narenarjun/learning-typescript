@@ -5,7 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CSVFileReader = void 0;
 var fs_1 = __importDefault(require("fs"));
-//! this was a backup to compare what has been changes, now this gone refactor
 var CSVFileReader = /** @class */ (function () {
     function CSVFileReader(filename) {
         this.filename = filename;
@@ -19,7 +18,8 @@ var CSVFileReader = /** @class */ (function () {
             .split('\n')
             .map(function (row) {
             return row.split(',');
-        });
+        })
+            .map(this.mapRow);
     };
     return CSVFileReader;
 }());
