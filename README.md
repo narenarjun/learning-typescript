@@ -73,3 +73,9 @@ Creates a new type, describing the property names and value types of an object.
 > ### 📚 Note:
 >
 > In TypeScript, each member is `public` by **default**. We may still mark a member `public` _explicitly_.
+
+### [Decorators](https://www.typescriptlang.org/docs/handbook/decorators.html#introduction)
+
+A Decorator is a special kind of declaration that can be attached to a class declaration, method, accessor, property, or parameter. Decorators use the form `@expression`, where expression must evaluate to a function that will be called at runtime with information about the decorated declaration.
+
+> ### NOTE:  Decorators are an experimental feature that may change in future releases.
